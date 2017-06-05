@@ -1,0 +1,220 @@
+body {
+	font-family: 'Dancing Script', cursive;
+	background-color:  #02010a;
+}
+
+#contenedor {
+	animation: contenido 2s;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	padding: 0px;
+	margin-left: 15%;
+	width: 70%;
+	color: white;
+}
+
+@-webkit-keyframes contenido{
+	0% {
+	margin-top: 150%
+	}
+	60% {
+	margin-top: -5%
+	}
+	100% {
+	margin-top: 0%
+	}
+}
+
+
+#contenedor div{
+	box-sizing: border-box;
+	min-width: 150px;
+}
+
+#cabecera {
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0;
+
+}
+.logo {
+	padding-left: 2%;
+	width: 60%;
+}
+h2 {
+	box-shadow: 2px #02010c;
+
+}
+
+#menu {
+	padding: 1% 1% 0 0;
+	width: 40%;
+}
+ 
+li{
+	display: inline-flex;
+	margin-left: 5px;
+	list-style: none;
+	font-size: 20px;
+	
+}
+
+ul{
+	float: right;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+} 
+
+li, a:hover {
+	color: blue;
+}
+
+#foto-principal {
+	background-color: #82c3a6;
+	width: 100%;
+	padding: 20px;
+
+}
+
+
+
+#fotos {
+	border: 1px solid black;
+	width: 100%;
+	background-color: #d5c75f;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.foto1, .foto2 {
+
+	padding: 20px;
+	width: 50%;
+}
+
+.foto1 img, .foto2 img{
+	box-shadow: 2px 2px 2px black;
+}
+
+.foto1:hover {
+	animation: foto1 1s;
+
+}
+
+@-webkit-keyframes foto1{
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(10deg);
+	}
+
+}
+
+.foto2:hover {
+	animation: foto2 1s;
+
+}
+
+@-webkit-keyframes foto2{
+	from {
+		transform: translate(0px);
+	}
+	to {
+		transform: translate(20px,-5px);
+	}
+
+}
+
+footer{
+	text-align: center;
+	background-color: #C6d5c5;
+	width: 100%;
+	border-radius: 0 0 20px 20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.art1 , .art2 , .art3 , .art4 {
+	width: 25%;
+	padding: 20px;
+	
+}
+
+
+p, h3 {
+	color: black;
+	text-align: center;
+}
+
+
+img { 
+	width: 100%; 
+}
+
+
+@media (max-width: 900px) {
+
+	#contenedor {
+		width: 100%;
+		margin: 0px;
+
+	}
+	#cabecera { 
+		border-radius: 0px;
+		width: 100%;
+		font-size: 22px;
+		padding: 0px;
+
+	}
+
+	.logo {
+		width: 100%;
+		text-align: center;
+	}
+
+	#menu {
+		float: none;
+		padding-right: 4px ;
+		width: 100%;
+
+	}
+
+	ul{	float: none;
+		margin: 0 auto;
+		text-align:center;
+	}
+
+	li {
+		float: none;
+		display: inline;
+		margin-left: 3px;
+		list-style: none;
+	}
+		
+	h1{
+		text-align: center;
+		font-size: 25px;
+	}
+
+	.foto1, .foto2 {
+		width: 100%;
+	}
+	
+	.art1, .art2, .art3, .art4{
+		width: 100%;
+	}
+}
